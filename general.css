@@ -10,17 +10,84 @@ img {
   height: auto;
   display: block;
 }
+/********************* General *********************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+/********************* Hamburger Menu *********************/
+:root {
+  --bar-width: 60px;
+  --bar-height: 5px;
+  --hamburger-gap: 10px;
+  --foreground: #29437a;
+  --background: white;
+  --animation: 150ms ease-in-out;
+}
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  width: max-content;
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  z-index: 2;
+  cursor: pointer;
+}
+.hamburger-menu::before,
+.hamburger-menu input,
+.hamburger-menu::after {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--background);
+  border-radius: 2px;
+  transition: opacity var(--animation), width var(--animation);
+  transform-origin: right center;
+}
+.hamburger-menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+.hamburger-menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+/********************* Hamburger Menu Animation *********************/
+.hamburger-menu:has(input:checked)::before {
+  rotate: -45deg;
+  transition: var(--animation);
+}
+.hamburger-menu:has(input:checked)::after {
+  rotate: 45deg;
+  transition: var(--animation);
+}
+
+.hamburger-menu:has(input)::before {
+  transition: var(--animation);
+}
+.hamburger-menu:has(input)::after {
+  transition: var(--animation);
+}
 /********************* Header *********************/
 header {
-  background-color: #1A2B4F; 
+  background-color: #1a2b4f;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3rem;
   padding-top: 3rem;
-  border-bottom: solid #29437A;
+  border-bottom: solid #29437a;
   border-width: 10px;
 }
 .logo {
-  width: 70px;
+  width: 80px;
 }
