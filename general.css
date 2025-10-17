@@ -317,3 +317,22 @@ summary {
 .card ul li {
   margin-bottom: 15px;
 }
+/********************* Galleri Indhold *********************/
+.gal1,
+.gal2,
+.gal3,
+.gal4,
+.gal5,
+.gal6 {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: solid 3px #29437a;
+  padding: 10px;
+  box-sizing: border-box;
+  max-width: 80%;
+  height: auto;
+}
+.gal_h1 {
+  margin: 20px;
+}
