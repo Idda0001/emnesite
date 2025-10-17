@@ -47,7 +47,78 @@
       </aside>
     </header>
 
-    <main></main>
+    <main class="kontakt-main">
+      <h1>Udfyld formularen og bliv kontaktet af en shopper</h1>
+
+      <form class="form" method="post">
+        <label for="e-mail"></label>
+        <input
+          type="email"
+          id="e-mail"
+          name="e-mail"
+          required
+          placeholder="E-mail"
+        />
+
+        <h2>Kropsmål</h2>
+        <label for="mål1"></label>
+        <input
+          type="text"
+          name="mål1"
+          id="mål1"
+          placeholder="Brystmål"
+          required
+        />
+
+        <label for="mål2"></label>
+        <input
+          type="text"
+          name="mål2"
+          id="mål2"
+          placeholder="Taljemål"
+          required
+        />
+
+        <label for="mål3"></label>
+        <input
+          type="text"
+          name="mål3"
+          id="mål3"
+          placeholder="Hoftemål"
+          required
+        />
+
+        <label for="mål4"></label>
+        <input
+          type="text"
+          name="mål4"
+          id="mål4"
+          placeholder="Benlængde"
+          required
+        />
+
+        <h2>Beskriv din stil og/eller ønskede stil</h2>
+        <textarea
+          name="stil"
+          id="stil"
+          rows="4"
+          placeholder="Fx: Klassisk, sporty, afslappet ..."
+        ></textarea>
+
+        <h2>Leveringsadresse</h2>
+        <input type="text" name="vej" placeholder="Vejnavn" required />
+        <input type="text" name="husnummer" placeholder="Husnummer" required />
+        <input
+          type="text"
+          name="postnummer"
+          placeholder="Postnummer"
+          required
+        />
+        <input type="text" name="by" placeholder="By" required />
+
+        <button type="submit">Send formular</button>
+      </form>
+    </main>
 
     <footer>
       <h2>Du er velkommen til at kontakte os</h2>
