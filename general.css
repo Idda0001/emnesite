@@ -288,7 +288,7 @@ summary {
 }
 
 .card {
-  border: 3px solid #1a1a1a;
+  border: 3px solid #1a2b4f;
   border-radius: 16px;
   background: #fff;
   padding: 20px;
@@ -310,7 +310,7 @@ summary {
   margin: 0;
   padding: 20px;
   font-weight: 600;
-  border-top: solid black;
+  border-top: solid #1a2b4f;
   border-width: 2px;
 }
 .card ul li {
