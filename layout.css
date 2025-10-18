@@ -79,7 +79,7 @@ img {
 @media (min-width: 800px) {
   body.forside main {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 3fr;
     grid-template-rows: 1fr;
     gap: 2rem;
     align-items: start;
@@ -125,7 +125,7 @@ img {
   .forside_box {
     grid-column: 3;
     max-width: 560px;
-    margin: 0;
+    margin: 0 auto;
     text-align: left;
     align-self: center;
   }
@@ -141,11 +141,11 @@ main .main_om {
 @media (min-width: 800px) {
   .main_om {
     grid-template-columns: 1fr 1fr;
-    max-width: 1200px;
-    gap: 50px;
+    max-width: 1400px;
+    gap: 2rem;
     margin: 0 auto;
     margin-top: 100px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
   .om_indhold,
   .om_indhold h2 {
@@ -182,5 +182,19 @@ main .main_om {
   }
   .om_mål_i h1 {
     padding-left: 15px;
+  }
+}
+/********************* Desktop Pakker *********************/
+.pakker {
+  display: grid;
+}
+@media (min-width: 800px) {
+  .pakker {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1400px;
+    gap: 50px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding-bottom: 60px;
   }
 }
