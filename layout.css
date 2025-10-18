@@ -197,4 +197,29 @@ main .main_om {
     margin-top: 100px;
     padding-bottom: 60px;
   }
+  .pakke1 {
+    margin: 0 auto;
+  }
+  .pakke2 {
+    margin: 0 auto;
+  }
+  .pakke3 {
+    margin: 0 auto;
+  }
+}
+/********************* Desktop Galleri *********************/
+.gal_bil {
+  display: grid;
+}
+@media (min-width: 800px) {
+  .gal_bil {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 100px;
+  }
+  .galleri h1 {
+    padding: 50px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
 }
